@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Address } from './interfaces/address.interface';
 import { Post } from './interfaces/post.interface';
+
 import { JsonPlaceHolderService } from './services/json-place-holder.service';
 
 @Component({
@@ -14,9 +15,14 @@ export class UserComponent implements OnInit {
   posts: Post[];
   showUpdate: boolean = false;
 
-  constructor(private jsonPlaceHolderService: JsonPlaceHolderService) { }
+  constructor(
+    private jsonPlaceHolderService: JsonPlaceHolderService
+  ) {
+    console.log('UserComponent created!');
+  }
 
   ngOnInit() {
+    console.log('UserComponent initialized ..');
     this.name = 'Bharat Pandey';
     this.hobbies = ['Write code', 'Watch movies', 'Swimming'];
     this.getJSONPlaceholderPosts();

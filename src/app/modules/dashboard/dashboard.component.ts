@@ -13,9 +13,12 @@ export class DashboardComponent implements OnInit {
   public showUpdate: boolean;
   public hideShow: string;
 
-  constructor() { }
+  constructor() {
+    console.log('DashboardComponent created!');
+  }
 
   ngOnInit() {
+    console.log('DashboardComponent initialized ..');
     this.person = {
       name: 'Bharat',
       email: 'bpaans@example.com',

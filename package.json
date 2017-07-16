@@ -4,7 +4,10 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run update:watch\"",
+    "server": "ng serve --progress false --proxy-config proxy.config.json",
+    "mock": "json-server --watch data/my-database.js --routes data/routes.json",
+    "update:watch": "onchange \"data/**/*.json\" -i -- npm run mock",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -44,6 +47,9 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
-    "typescript": "~2.3.3"
+    "typescript": "~2.3.3",
+    "json-server": "^0.9.6",
+    "concurrently": "^3.4.0",
+    "onchange": "^3.2.1"
   }
 }
