@@ -45,9 +45,5 @@ import { Routes, RouterModule } from '@angular/router'; const routes: Routes = [
 
 3. Run `ng serve` or, `npm start` for a development server. Navigate to `http://localhost:4200/`.
 
-## Add routing links in `app.component.html` 
-<a href="http://localhost:4200/dashboard">Home</a> &nbsp;&nbsp;
-<a href="http://localhost:4200/user">Lazy Module</a> &nbsp;&nbsp;
-<a href="http://localhost:4200/customersinfo">JSON Server</a>
-<router-outlet></router-outlet>
+## `Add routing paths` for Dashboard Module, User Module and Customer Info Module in `app.component.html`: Home `http://localhost:4200/dashboard`,  Lazy Module `http://localhost:4200/user` and JSON Server `http://localhost:4200/customersinfo` respectively.
 
