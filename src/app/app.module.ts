@@ -19,13 +19,17 @@ const routes: Routes = [
   {
     path: 'user',
     loadChildren: 'app/modules/user/user.module#UserModule'
+  },
+  {
+    path: 'customersinfo',
+    loadChildren: 'app/modules/customers-info/customers-info.module#CustomersInfoModule'
   }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
