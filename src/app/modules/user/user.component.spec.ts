@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpModule } from '@angular/http'; 
 
 import { UserComponent } from './user.component';
+import { JsonPlaceHolderService } from './services/json-place-holder.service';
+
 
 describe('UserComponent', () => {
   let component: UserComponent;
@@ -8,9 +11,13 @@ describe('UserComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UserComponent ]
+      imports:[
+        HttpModule
+      ],
+      declarations: [UserComponent],
+      providers: [JsonPlaceHolderService]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

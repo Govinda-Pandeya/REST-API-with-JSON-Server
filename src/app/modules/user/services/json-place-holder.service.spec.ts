@@ -1,10 +1,14 @@
 import { TestBed, inject } from '@angular/core/testing';
+import { HttpModule } from '@angular/http'; 
 
 import { JsonPlaceHolderService } from './json-place-holder.service';
 
-describe('JsonPlaceHolderService', () => {
+describe('Service: JsonPlaceHolderService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
+      imports:[
+        HttpModule
+      ],
       providers: [JsonPlaceHolderService]
     });
   });
