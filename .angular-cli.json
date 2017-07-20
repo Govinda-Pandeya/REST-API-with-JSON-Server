@@ -5,7 +5,7 @@
   },
   "apps": [
     {
-      "root": "src",
+      "root": "app",
       "outDir": "./ng-build/",
       "assets": [
         "assets",

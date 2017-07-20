@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { CustomersInfoComponent } from 'app/modules/customers-info/customers-info.component';
 import { CustomerDataService } from './services/customer-data.service';
+import { CustomerComponent } from 'app/modules/customers-info/components/customer/customer.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,10 @@ const routes: Routes = [
     HttpModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [CustomersInfoComponent],
+  declarations: [
+    CustomersInfoComponent,
+    CustomerComponent
+  ],
   providers: [CustomerDataService]
 })
 export class CustomersInfoModule { }

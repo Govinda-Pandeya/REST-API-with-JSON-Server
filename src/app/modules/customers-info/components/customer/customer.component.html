@@ -1,0 +1,27 @@
+<table border="1px" align="center" style="width:80%">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Address</th>
+    <th>Phone Number</th>
+  </tr>
+  <tr *ngFor="let customer of customersInfo">
+    <td>{{customer.firstName}} {{customer.lastName}}</td>
+    <td>{{customer.age}}</td>
+    <td>{{customer.address.streetAddress}}, {{customer.address.city}}, {{customer.address.state}} {{customer.address.postalCode}}
+    </td>
+    <td>
+      <table align="center">
+        <ng-container *ngFor="let phone of customer.phoneNumber">
+          <tr>
+            <th>{{phone.type}}</th>
+          </tr>
+          <tr>
+            <td>{{phone.number}}</td>
+          </tr>
+        </ng-container>
+      </table>
+    </td>
+  </tr>
+</table>
+<br><button (click)="hideDetails()">Hide Details</button><br>

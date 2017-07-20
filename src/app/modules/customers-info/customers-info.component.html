@@ -2,34 +2,7 @@
 <p>JSON Server is a Node Module that can be used to create Fake REST JSON web service. All we need is a JSON file for sample
   data which will be used as our back-end REST API.</p>
 
-<div>
-  <h3 align="center">Customers Details:</h3>
-  <div>
-    <table border="1px" align="center" style="width:80%">
-      <tr>
-        <th >Name</th>
-        <th >Age</th>
-        <th >Address</th>
-        <th >Phone Number</th>
-      </tr>
-      <tr *ngFor="let customer of customersInfo">
-        <td >{{customer.firstName}} {{customer.lastName}}</td>
-        <td >{{customer.age}}</td>
-        <td >{{customer.address.streetAddress}}, {{customer.address.city}}, {{customer.address.state}} {{customer.address.postalCode}}
-        </td>
-        <td  >
-          <table align="center">
-            <ng-container *ngFor="let phone of customer.phoneNumber">
-              <tr>
-                <th >{{phone.type}}</th>
-              </tr>
-              <tr>
-                <td >{{phone.number}}</td>
-              </tr>
-            </ng-container>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </div>
+<h3 align="center">Customers Details:</h3>
+<button *ngIf="!showTable" (click)="showDetails()">Show Details</button>
+<div *ngIf="showTable" app-customer [customersInfo]="customersInfo" (hide)="onHide($event)">  
 </div>
