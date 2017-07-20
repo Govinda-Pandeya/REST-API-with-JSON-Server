@@ -54,7 +54,7 @@ export class CustomersInfoComponent implements OnInit {
    * Hides customer details table wnen hide detail button is clicked.
    * @param  {boolean} event
    */
-  onHide(event) {
+  onHide(event: boolean) {
     this.showTable = event;
   }
 

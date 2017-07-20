@@ -7,6 +7,9 @@ export class CustomerDataService {
 
   constructor(private http: Http) { }
 
+  /**
+   * Fetches customers data from the JSON server.
+   */
   fetchCustomersData() {
     const url = '/api/customersinfoserver/getdata/customersInfoSource';
     return this.http.get(url)

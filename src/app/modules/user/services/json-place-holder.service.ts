@@ -7,6 +7,11 @@ export class JsonPlaceHolderService {
 
   constructor(public http: Http) { }
 
+
+  /**
+   * Fetches posts data from provided JsonPlaceHolder API
+   * @returns {Observeable}
+   */
   getPosts() {
     return this.http.get('https://jsonplaceholder.typicode.com/posts')
       .map(res => res.json());

@@ -17,6 +17,9 @@ export class CustomerComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * Emits boolean value 'false' to parent component when hide button is clicked.
+   */
   hideDetails() {
     this.hide.emit(false);
   }
