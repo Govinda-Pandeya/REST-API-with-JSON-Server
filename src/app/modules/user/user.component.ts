@@ -43,6 +43,8 @@ export class UserComponent implements OnInit {
   getJSONPlaceholderPosts() {
     this.jsonPlaceHolderService.getPosts().subscribe((posts) => {
       this.posts = posts;
+      console.log('Getting Posts Data from JSONPlaceHolder:');
+      console.log(this.posts);
     });
   }
 
