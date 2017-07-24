@@ -34,65 +34,65 @@ describe('Service: CustomerDataService', () => {
         const mockResponse = {
           data: [
             {
-              "firstName": "Bharat",
-              "lastName": "Pandey",
-              "age": 25,
-              "address": {
-                "streetAddress": "7777 Kings Rd",
-                "city": "Irving",
-                "state": "TX",
-                "postalCode": "75605"
+              'firstName': 'Bharat',
+              'lastName': 'Pandey',
+              'age': 25,
+              'address': {
+                'streetAddress': '7777 Kings Rd',
+                'city': 'Irving',
+                'state': 'TX',
+                'postalCode': '75605'
               },
-              "phoneNumber": [
+              'phoneNumber': [
                 {
-                  "type": "Home",
-                  "number": "212 555-1234"
+                  'type': 'Home',
+                  'number': '212 555-1234'
                 },
                 {
-                  "type": "Fax",
-                  "number": "646 555-4567"
+                  'type': 'Fax',
+                  'number': '646 555-4567'
                 }
               ]
             },
             {
-              "firstName": "Tom",
-              "lastName": "Cruise",
-              "age": 33,
-              "address": {
-                "streetAddress": "1000 N 4th Street",
-                "city": "New York",
-                "state": "NY",
-                "postalCode": "52557"
+              'firstName': 'Denzel',
+              'lastName': 'Washington',
+              'age': 33,
+              'address': {
+                'streetAddress': '1000 N 4th Street',
+                'city': 'New York',
+                'state': 'NY',
+                'postalCode': '52557'
               },
-              "phoneNumber": [
+              'phoneNumber': [
                 {
-                  "type": "Home",
-                  "number": "222 555-1234"
+                  'type': 'Home',
+                  'number': '222 555-1234'
                 },
                 {
-                  "type": "Fax",
-                  "number": "666 888-4567"
+                  'type': 'Fax',
+                  'number': '666 888-4567'
                 }
               ]
             },
             {
-              "firstName": "Lionel ",
-              "lastName": "Messi",
-              "age": 29,
-              "address": {
-                "streetAddress": "Carrer d'Arístides Maillol",
-                "city": "Barcelona",
-                "state": "Catalonia",
-                "postalCode": "08028"
+              'firstName': 'Lionel ',
+              'lastName': 'Messi',
+              'age': 29,
+              'address': {
+                'streetAddress': `Carrer d' Arístides Maillol`,
+                'city': 'Barcelona',
+                'state': 'Catalonia',
+                'postalCode': '08028'
               },
-              "phoneNumber": [
+              'phoneNumber': [
                 {
-                  "type": "Home",
-                  "number": "555 555-5555"
+                  'type': 'Home',
+                  'number': '555 555-5555'
                 },
                 {
-                  "type": "Fax",
-                  "number": "666 666-6666"
+                  'type': 'Fax',
+                  'number': '666 666-6666'
                 }
               ]
             }

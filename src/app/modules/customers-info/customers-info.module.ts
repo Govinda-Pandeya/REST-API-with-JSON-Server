@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 
-import { CustomersInfoComponent } from 'app/modules/customers-info/customers-info.component';
 import { CustomerDataService } from './services/customer-data.service';
+
+import { CustomersInfoComponent } from 'app/modules/customers-info/customers-info.component';
 import { CustomerComponent } from 'app/modules/customers-info/components/customer/customer.component';
 
 const routes: Routes = [

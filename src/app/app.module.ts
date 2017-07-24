@@ -13,8 +13,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-      path: 'dashboard', 
-      component: DashboardComponent, 
+    path: 'dashboard',
+    component: DashboardComponent,
   },
   {
     path: 'user',
